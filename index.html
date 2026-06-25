@@ -13,7 +13,6 @@
     :root {
       --orange: #E85C0D;
       --orange-light: #FFF0E8;
-      --orange-mid: #FFDDC8;
       --black: #111111;
       --gray-50: #F9F9F8;
       --gray-100: #F3F2F0;
@@ -44,12 +43,8 @@
       padding: 40px 20px 80px;
     }
 
-    .page-wrap {
-      max-width: 740px;
-      margin: 0 auto;
-    }
+    .page-wrap { max-width: 740px; margin: 0 auto; }
 
-    /* Header */
     .header {
       display: flex;
       align-items: flex-start;
@@ -69,39 +64,13 @@
       margin-bottom: 18px;
     }
 
-    .logo svg { height: 22px; width: auto; }
-
-    .logo-text {
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-      color: #fff;
-    }
-
+    .logo-text { font-size: 18px; font-weight: 600; letter-spacing: -0.5px; color: #fff; }
     .logo-text span { color: var(--orange); }
+    .logo-bolt { color: var(--orange); font-size: 22px; margin-left: 2px; line-height: 1; }
 
-    .logo-bolt {
-      color: var(--orange);
-      font-size: 22px;
-      margin-left: 2px;
-      line-height: 1;
-    }
+    h1 { font-size: 22px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
 
-    h1 {
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--text-primary);
-      letter-spacing: -0.3px;
-      margin-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
-
-    /* Reset button */
     .btn-reset {
       background: transparent;
       border: 1px solid var(--border);
@@ -117,7 +86,6 @@
     }
     .btn-reset:hover { border-color: var(--border-hover); color: var(--text-primary); }
 
-    /* Progress */
     .progress-wrap {
       background: #fff;
       border: 1px solid var(--border);
@@ -127,42 +95,13 @@
       box-shadow: var(--shadow-card);
     }
 
-    .progress-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 10px;
-    }
+    .progress-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+    .progress-label { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+    .progress-count { font-size: 13px; color: var(--text-secondary); }
+    .progress-track { height: 5px; background: var(--gray-100); border-radius: 99px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--orange); border-radius: 99px; transition: width 0.3s ease; }
 
-    .progress-label {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-primary);
-    }
-
-    .progress-count {
-      font-size: 13px;
-      color: var(--text-secondary);
-    }
-
-    .progress-track {
-      height: 5px;
-      background: var(--gray-100);
-      border-radius: 99px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background: var(--orange);
-      border-radius: 99px;
-      transition: width 0.3s ease;
-    }
-
-    /* Section */
-    .section {
-      margin-bottom: 24px;
-    }
+    .section { margin-bottom: 24px; }
 
     .section-header {
       display: flex;
@@ -172,42 +111,20 @@
       padding: 0 2px;
     }
 
-    .section-label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .section-label { display: flex; align-items: center; gap: 8px; }
 
     .step-num {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: var(--orange);
-      color: #fff;
-      font-size: 11px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--orange); color: #fff;
+      font-size: 11px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
 
-    .section-title {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-primary);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .section-tally {
-      font-size: 12px;
-      color: var(--text-tertiary);
-    }
-
+    .section-title { font-size: 13px; font-weight: 600; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; }
+    .section-tally { font-size: 12px; color: var(--text-tertiary); }
     .section-tally.complete { color: var(--green-text); font-weight: 500; }
 
-    /* Card */
     .card {
       background: #fff;
       border: 1px solid var(--border);
@@ -216,7 +133,6 @@
       box-shadow: var(--shadow-card);
     }
 
-    /* Item */
     .item {
       display: flex;
       align-items: flex-start;
@@ -233,62 +149,30 @@
     .item.done { background: var(--gray-50); }
 
     .cb {
-      width: 20px;
-      height: 20px;
-      border-radius: 6px;
+      width: 20px; height: 20px; border-radius: 6px;
       border: 1.5px solid var(--border-hover);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-      transition: all 0.15s;
-      background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+      transition: all 0.15s; background: #fff;
     }
-
-    .item.done .cb {
-      background: var(--green-bg);
-      border-color: #a8d56d;
-    }
-
-    .cb-check {
-      opacity: 0;
-      transition: opacity 0.15s;
-    }
+    .item.done .cb { background: var(--green-bg); border-color: #a8d56d; }
+    .cb-check { opacity: 0; transition: opacity 0.15s; }
     .item.done .cb-check { opacity: 1; }
 
     .item-body { flex: 1; min-width: 0; }
 
     .item-title {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-primary);
-      line-height: 1.4;
+      font-size: 14px; font-weight: 500;
+      color: var(--text-primary); line-height: 1.4;
       transition: color 0.15s;
     }
+    .item.done .item-title { color: var(--text-tertiary); text-decoration: line-through; }
 
-    .item.done .item-title {
-      color: var(--text-tertiary);
-      text-decoration: line-through;
-    }
-
-    .item-desc {
-      font-size: 12.5px;
-      color: var(--text-secondary);
-      line-height: 1.55;
-      margin-top: 4px;
-    }
-
-    .item-desc a {
-      color: var(--orange);
-      text-decoration: none;
-      font-weight: 500;
-    }
+    .item-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.55; margin-top: 4px; }
+    .item-desc a { color: var(--orange); text-decoration: none; font-weight: 500; }
     .item-desc a:hover { text-decoration: underline; }
-
     .item-desc strong { color: var(--text-primary); font-weight: 600; }
 
-    /* Slack preview */
     .slack-preview {
       background: var(--gray-50);
       border-left: 3px solid var(--orange);
@@ -296,21 +180,9 @@
       padding: 10px 12px;
       margin-top: 10px;
     }
+    .slack-preview .sp-meta { font-size: 11.5px; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+    .slack-preview .sp-body { font-size: 12px; color: var(--text-secondary); line-height: 1.45; }
 
-    .slack-preview .sp-meta {
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 3px;
-    }
-
-    .slack-preview .sp-body {
-      font-size: 12px;
-      color: var(--text-secondary);
-      line-height: 1.45;
-    }
-
-    /* Template message */
     .msg-template {
       background: var(--gray-100);
       border-radius: var(--radius-sm);
@@ -322,99 +194,62 @@
       line-height: 1.5;
     }
 
-    /* Badges */
     .badge {
       display: inline-block;
-      font-size: 10.5px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 20px;
-      line-height: 1.6;
-      margin-left: 6px;
-      vertical-align: middle;
+      font-size: 10.5px; font-weight: 600;
+      padding: 2px 8px; border-radius: 20px;
+      line-height: 1.6; margin-left: 6px; vertical-align: middle;
     }
-
     .badge-orange { background: var(--orange-light); color: var(--orange); }
     .badge-blue { background: var(--blue-bg); color: var(--blue-text); }
     .badge-green { background: var(--green-bg); color: var(--green-text); }
 
-    /* Link rows */
     .link-row {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 6px;
-      font-size: 12.5px;
-      color: var(--orange);
-      font-weight: 500;
+      display: flex; align-items: center; gap: 6px;
+      margin-top: 6px; font-size: 12.5px;
+      color: var(--orange); font-weight: 500;
     }
-
     .link-row a { color: inherit; text-decoration: none; }
     .link-row a:hover { text-decoration: underline; }
 
-    /* Video block */
     .video-block {
       background: #fff;
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       padding: 16px 18px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
+      display: flex; align-items: center; gap: 14px;
       box-shadow: var(--shadow-card);
       margin-bottom: 24px;
     }
-
     .video-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
+      width: 42px; height: 42px; border-radius: 50%;
       background: var(--orange-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-
-    .video-icon svg { width: 18px; height: 18px; color: var(--orange); fill: var(--orange); }
-
-    .video-text .vt {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-primary);
-    }
-
-    .video-text .vs {
-      font-size: 12px;
-      color: var(--text-secondary);
-      margin-top: 2px;
-    }
-
-    .video-text a {
-      font-size: 12px;
-      color: var(--orange);
-      text-decoration: none;
-      font-weight: 500;
-      display: inline-block;
-      margin-top: 5px;
-    }
+    .video-icon svg { width: 18px; height: 18px; fill: var(--orange); }
+    .video-text .vt { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+    .video-text .vs { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+    .video-text a { font-size: 12px; color: var(--orange); text-decoration: none; font-weight: 500; display: inline-block; margin-top: 5px; }
     .video-text a:hover { text-decoration: underline; }
 
-    /* Credentials block */
     .creds {
-      background: var(--gray-100);
-      border-radius: var(--radius-sm);
-      padding: 10px 12px;
-      margin-top: 8px;
-      font-size: 12px;
-      color: var(--text-secondary);
+      background: var(--gray-100); border-radius: var(--radius-sm);
+      padding: 10px 12px; margin-top: 8px;
+      font-size: 12px; color: var(--text-secondary);
     }
     .creds .cred-row { display: flex; gap: 6px; align-items: baseline; margin-bottom: 3px; }
     .creds .cred-row:last-child { margin-bottom: 0; }
     .creds .cred-key { font-weight: 500; color: var(--text-primary); min-width: 60px; }
     .creds .cred-val { font-family: 'Courier New', monospace; font-size: 11.5px; color: var(--text-secondary); }
 
-    /* Completion banner */
+    .info-note {
+      background: var(--blue-bg);
+      border-radius: var(--radius-sm);
+      padding: 9px 12px; margin-top: 8px;
+      font-size: 12px; color: var(--blue-text); line-height: 1.5;
+    }
+    .info-note strong { color: var(--blue-text); font-weight: 600; }
+
     .done-banner {
       display: none;
       background: var(--green-bg);
@@ -424,28 +259,9 @@
       text-align: center;
       margin-top: 8px;
     }
-
     .done-banner.visible { display: block; }
-
-    .done-banner p {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--green-text);
-      margin-bottom: 4px;
-    }
-
-    .done-banner span {
-      font-size: 13px;
-      color: var(--green-text);
-      opacity: 0.8;
-    }
-
-    /* Divider line in items */
-    .item-divider {
-      border: none;
-      border-top: 1px dashed var(--border);
-      margin: 8px 0;
-    }
+    .done-banner p { font-size: 15px; font-weight: 600; color: var(--green-text); margin-bottom: 4px; }
+    .done-banner span { font-size: 13px; color: var(--green-text); opacity: 0.8; }
   </style>
 </head>
 <body>
@@ -487,7 +303,7 @@
     </div>
   </div>
 
-  <!-- Section 1 -->
+  <!-- STEP 1: Spot the win -->
   <div class="section" id="section-0">
     <div class="section-header">
       <div class="section-label">
@@ -517,12 +333,12 @@
     </div>
   </div>
 
-  <!-- Section 2 -->
+  <!-- STEP 2: Open Common Paper -->
   <div class="section" id="section-1">
     <div class="section-header">
       <div class="section-label">
         <div class="step-num">2</div>
-        <div class="section-title">Classify the account</div>
+        <div class="section-title">Look up the client in Common Paper</div>
       </div>
       <span class="section-tally" id="tally-1">0 / 2</span>
     </div>
@@ -534,9 +350,13 @@
           </svg>
         </div>
         <div class="item-body">
-          <div class="item-title">Check the client's website and count their listings</div>
+          <div class="item-title">Sign in to Common Paper and find the client</div>
           <div class="item-desc">
-            <strong>20 or more listings = big account.</strong> Fewer than 20 = small account. If it's hard to tell, confirm with the sales team before moving on.
+            Go to <a href="https://app.commonpaper.com/" target="_blank">app.commonpaper.com</a> and log in, then locate the client's record.
+            <div class="creds">
+              <div class="cred-row"><span class="cred-key">User</span><span class="cred-val">ops@rentengine.io</span></div>
+              <div class="cred-row"><span class="cred-key">Password</span><span class="cred-val">stored in password manager</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -547,24 +367,26 @@
           </svg>
         </div>
         <div class="item-body">
-          <div class="item-title">Request the Stripe ID from Alex Tiburzi <span class="badge badge-orange">sales</span></div>
+          <div class="item-title">Confirm account size and collect contact information</div>
           <div class="item-desc">
-            You'll need this before you can provision their account. Message Alex on Slack:
-            <div class="msg-template">"Hey Alex, can you send me the Stripe ID for [Client Name]? Setting up their account now."</div>
+            From the client's record, pull their website and check their active listings. <strong>20 or more = big account. Fewer than 20 = small account.</strong> If it's hard to tell, confirm with the sales team before moving on.
+            <div class="info-note">
+              <strong>Note:</strong> Also collect the contact information you'll need to fill out the ClickUp form and provision their account in Retool.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Section 3 -->
+  <!-- STEP 3: Request Stripe ID -->
   <div class="section" id="section-2">
     <div class="section-header">
       <div class="section-label">
         <div class="step-num">3</div>
-        <div class="section-title">Submit the ClickUp form</div>
+        <div class="section-title">Request the Stripe ID</div>
       </div>
-      <span class="section-tally" id="tally-2">0 / 2</span>
+      <span class="section-tally" id="tally-2">0 / 1</span>
     </div>
     <div class="card">
       <div class="item" id="item-3" onclick="toggle(3, 2)">
@@ -574,9 +396,36 @@
           </svg>
         </div>
         <div class="item-body">
-          <div class="item-title">Fill out the correct onboarding form</div>
+          <div class="item-title">Ask Alex Tiburzi for the client's Stripe ID <span class="badge badge-orange">sales</span></div>
           <div class="item-desc">
-            Open the form that matches the account size and complete all fields. This triggers the welcome email to the client.
+            You'll need this before you can provision their account in Retool. Message Alex on Slack:
+            <div class="msg-template">"Hey Alex, can you send me the Stripe ID for [Client Name]? Setting up their account now."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4: Submit ClickUp form -->
+  <div class="section" id="section-3">
+    <div class="section-header">
+      <div class="section-label">
+        <div class="step-num">4</div>
+        <div class="section-title">Submit the ClickUp form</div>
+      </div>
+      <span class="section-tally" id="tally-3">0 / 2</span>
+    </div>
+    <div class="card">
+      <div class="item" id="item-4" onclick="toggle(4, 3)">
+        <div class="cb" id="cb-4">
+          <svg class="cb-check" width="11" height="9" viewBox="0 0 11 9" fill="none">
+            <path d="M1 4.5L4 7.5L10 1" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="item-body">
+          <div class="item-title">Fill out the correct onboarding form using the info from Common Paper</div>
+          <div class="item-desc">
+            Open the form that matches the account size. Use the contact information pulled from Common Paper to complete all fields. Submitting this triggers the welcome email to the client.
             <div class="link-row">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               <a href="https://forms.clickup.com/90133023271/f/2ky5hjh7-1193/VT1DM4KT9CRXMO5B1A" target="_blank">Small account form</a>
@@ -588,30 +437,6 @@
           </div>
         </div>
       </div>
-      <div class="item" id="item-4" onclick="toggle(4, 2)">
-        <div class="cb" id="cb-4">
-          <svg class="cb-check" width="11" height="9" viewBox="0 0 11 9" fill="none">
-            <path d="M1 4.5L4 7.5L10 1" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="item-body">
-          <div class="item-title">Confirm you received a copy of the welcome email</div>
-          <div class="item-desc">After submitting the form, check your inbox for the copy. Do not move on until you confirm the email went out.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 4 -->
-  <div class="section" id="section-3">
-    <div class="section-header">
-      <div class="section-label">
-        <div class="step-num">4</div>
-        <div class="section-title">Create the account in RentEngine</div>
-      </div>
-      <span class="section-tally" id="tally-3">0 / 1</span>
-    </div>
-    <div class="card">
       <div class="item" id="item-5" onclick="toggle(5, 3)">
         <div class="cb" id="cb-5">
           <svg class="cb-check" width="11" height="9" viewBox="0 0 11 9" fill="none">
@@ -619,21 +444,19 @@
           </svg>
         </div>
         <div class="item-body">
-          <div class="item-title">Provision the account in the onboarding tool</div>
-          <div class="item-desc">
-            Open the <a href="https://thsld.retool.com/apps/6b66c82e-e0f6-11ef-bfeb-e354f738aaf3/Customer%20Onboarding/defaultPage" target="_blank">Customer Onboarding tool in Retool</a>, click <strong>Provision new account</strong>, and complete all required fields. Have the Stripe ID from Alex ready before starting. This creates the client's RentEngine access.
-          </div>
+          <div class="item-title">Confirm you received a copy of the welcome email</div>
+          <div class="item-desc">Check your inbox for the copy after submitting. Do not move on until you confirm the email went out.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Section 5 -->
+  <!-- STEP 5: Provision in Retool -->
   <div class="section" id="section-4">
     <div class="section-header">
       <div class="section-label">
         <div class="step-num">5</div>
-        <div class="section-title">Log the contract in Common Paper</div>
+        <div class="section-title">Create the account in RentEngine</div>
       </div>
       <span class="section-tally" id="tally-4">0 / 1</span>
     </div>
@@ -645,20 +468,16 @@
           </svg>
         </div>
         <div class="item-body">
-          <div class="item-title">Sign in to Common Paper and complete the contract entry</div>
+          <div class="item-title">Provision the account in the onboarding tool</div>
           <div class="item-desc">
-            Go to <a href="https://app.commonpaper.com/" target="_blank">app.commonpaper.com</a> and log in with the ops credentials, then complete the contract entry for the new client.
-            <div class="creds">
-              <div class="cred-row"><span class="cred-key">User</span><span class="cred-val">ops@rentengine.io</span></div>
-              <div class="cred-row"><span class="cred-key">Password</span><span class="cred-val">stored in password manager</span></div>
-            </div>
+            Open the <a href="https://thsld.retool.com/apps/6b66c82e-e0f6-11ef-bfeb-e354f738aaf3/Customer%20Onboarding/defaultPage" target="_blank">Customer Onboarding tool in Retool</a>, click <strong>Provision new account</strong>, and complete all fields using the contact info from Common Paper and the Stripe ID from Alex. This creates the client's RentEngine access.
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Section 6 -->
+  <!-- STEP 6: Close the loop -->
   <div class="section" id="section-5">
     <div class="section-header">
       <div class="section-label">
@@ -700,18 +519,17 @@
   const state = new Array(TOTAL).fill(false);
 
   const sectionItems = [
-    [0],       // section 0
-    [1, 2],    // section 1
-    [3, 4],    // section 2
-    [5],       // section 3
-    [6],       // section 4
-    [7],       // section 5
+    [0],       // section 0 — spot the win
+    [1, 2],    // section 1 — common paper
+    [3],       // section 2 — stripe ID
+    [4, 5],    // section 3 — clickup form
+    [6],       // section 4 — retool
+    [7],       // section 5 — slack
   ];
 
   function toggle(itemIdx, sectionIdx) {
     state[itemIdx] = !state[itemIdx];
-    const item = document.getElementById('item-' + itemIdx);
-    item.classList.toggle('done', state[itemIdx]);
+    document.getElementById('item-' + itemIdx).classList.toggle('done', state[itemIdx]);
     updateProgress();
     updateTally(sectionIdx);
   }
